@@ -19,7 +19,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           #node-version: 16
-          node-version: ./.node-version
+          node-version-file: ./.node-version
           
       - name: Check Node.js version
         run: node --version
@@ -27,4 +27,4 @@ jobs:
       - name: Main
       #- run: npm ci
       #- run: npm test
-        run: npm run tauri dev
+        run: npm run ci

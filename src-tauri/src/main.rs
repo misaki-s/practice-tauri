@@ -15,7 +15,8 @@ fn simple_command(filepath: &str) -> String {
     println!("rust@simple_command {}",filepath);
     use std::process::Command;
     let win_cmd = format!("start {}", filepath);
-    let output = if cfg!(target_os = "windows") {
+    // let output = 
+    if cfg!(target_os = "windows") {
         // windows用のコマンド
         Command::new("cmd")
                 .args(["/C", &win_cmd])

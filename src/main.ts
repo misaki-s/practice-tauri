@@ -27,7 +27,7 @@ async function openDialog () {
     // console.log(fpath);
     // console.log(filepath);
     if(fpath){
-      filepath.value =  fpath.toString();
+      filepath.value = fpath.toString();
       invoke("simple_command", {
         filepath: fpath,
       });
